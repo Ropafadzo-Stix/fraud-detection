@@ -21,5 +21,18 @@ str(fd_data)
 
 # summary
 summary(fd_data)
-### V1 - V28 : have mean 0 but has been standardised (is that neccesary? )
+### V1 - V28 : have mean 0 but has been standardised (is that neccesary?)
+### Inspect time variable 
+### Change "Class" to a categorical variable. 
+### 
+
+# Change  "Class" Variable to factor. 
+fd_data$Class <- as.factor(fd_data$Class)
+
+###imbalance data (0 - nomal = 284 315
+###                1 - fraudulent = 495 )
+
+
+## Things to do
+# Standardise the data (maybe) 
 
